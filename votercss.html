@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voter Registration</title>
+
+    <style>
+        
+        table tr:nth-child(1) { background-color: lightcoral; }      
+        table tr:nth-child(2) { background-color: lightsalmon; }    
+        table tr:nth-child(3) { background-color: khaki; }     
+        table tr:nth-child(4) { background-color: lightgreen; }     
+        table tr:nth-child(5) { background-color: lightblue; }       
+        table tr:nth-child(6) { background-color: lightsteelblue; }  
+        table tr:nth-child(7) { background-color: plum; }            
+        table tr:nth-child(8) { background-color: lightpink; }       
+        table tr:nth-child(9) { background-color: thistle; }         
+
+        td {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+<center>
+<h1>Election Commission</h1>
+<h2>Voter Registration Form</h2>
+</center>
+
+<form>
+    <table border="5" align="center" cellspacing="10" cellpadding="10">
+
+        <tr>
+            <td>Full Name</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Date of Birth</td>
+            <td><input type="date"></td>
+        </tr>
+
+        <tr>
+            <td>Contact Number</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="g"> Male
+                <input type="radio" name="g"> Female
+                <input type="radio" name="g"> Other
+            </td>
+        </tr>
+
+        <tr>
+            <td>Address</td>
+            <td><textarea rows="5" cols="20"></textarea></td>
+        </tr>
+
+        <tr>
+            <td>Nationality</td>
+            <td>
+                <select>
+                    <option>--SELECT--</option>
+                    <option>Indian</option>
+                    <option>Other</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>ID Proof</td>
+            <td>
+                <input type="checkbox"> Aadhaar
+                <input type="checkbox"> Passport
+                <input type="checkbox"> Driving License
+            </td>
+        </tr>
+
+        <tr>
+            <td>Constituency</td>
+            <td>
+                <select>
+                    <option>--SELECT--</option>
+                    <option>Constituency 1</option>
+                    <option>Constituency 2</option>
+                    <option>Constituency 3</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+</body>
+</html>
+

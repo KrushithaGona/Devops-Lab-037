@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+
+    <style>
+        body {
+            background: lightblue; /* lighter background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: navy;
+        }
+
+        form {
+            width: 550px;
+            margin: 30px auto;
+            background: lightpink;
+            padding: 15px 25px;
+            border-radius: 12px;
+            border: mediumslateblue solid 3px; /* purple border */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 8px;
+            font-weight: bold;
+            color: darkslategray;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid dodgerblue; /* blue border */
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        textarea:focus,
+        select:focus {
+            border-color: mediumslateblue; /* purple shadow */
+            box-shadow: 0 0 5px mediumslateblue;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            margin: 5px;
+
+            color: white;
+            font-weight: bold;
+        }
+
+        input[type="submit"] {
+            background-color: dodgerblue; /* brighter blue */
+        }
+
+        input[type="submit"]:hover {
+            background-color: royalblue;
+        }
+
+        input[type="reset"] {
+            background-color: tomato; /* red-orange */
+        }
+
+        input[type="reset"]:hover {
+            background-color: orangered;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 7px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>DevOps Lab</h1>
+    <h2>Student Registration Form</h2>
+
+    <form>
+        <table cellspacing="10" cellpadding="10">
+
+            <tr>
+                <td>Name</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>Contact Number</td>
+                <td><input type="tel"></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="g"> Male
+                    <input type="radio" name="g"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td><textarea rows="4"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Hobbies</td>
+                <td>
+                    <input type="checkbox"> Singing
+                    <input type="checkbox"> Travelling
+                    <input type="checkbox"> Reading novels
+                </td>
+            </tr>
+
+            <tr>
+                <td>Skillset</td>
+                <td>
+                    <input type="checkbox"> C
+                    <input type="checkbox"> Python
+                    <input type="checkbox"> Java
+                </td>
+            </tr>
+
+            <tr>
+                <td>Highest Qualification</td>
+                <td>
+                    <select>
+                        <option>--SELECT--</option>
+                        <option>Ph.D</option>
+                        <option>M.E/M.Tech</option>
+                        <option>B.E/B.Tech</option>
+                        <option>Diploma</option>
+                        <option>Inter</option>
+                        <option>SSC</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>District</td>
+                <td>
+                    <select>
+                        <option>--SELECT--</option>
+                        <option>District 1</option>
+                        <option>District 2</option>
+                        <option>District 3</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
+
